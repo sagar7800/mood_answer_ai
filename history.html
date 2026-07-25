@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodAnswer AI</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="/" aria-label="MoodAnswer AI home">
+          <span class="logo-icon">✦</span>
+          <span>
+            <strong>MoodAnswer AI</strong>
+            <small>Mood-aware Q&A</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/ask">Ask</a>
+          <a href="/fun?assistantMode=funtalk">FunTalk</a>
+          <a href="/rooms">Rooms</a>
+          <a href="/games">Games</a>
+          <a href="/features">Features</a>
+          <a href="/settings">Settings</a>
+          <a href="/history">History</a>
+          <a href="#preview">Preview</a>
+        </nav>
+
+        <div class="session-actions">
+          <span id="sessionUser" class="status-pill">Signed in</span>
+          <button id="logoutButton" class="ghost-button" type="button">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="badge">😊 Mood-aware answers with safe, clear tone</p>
+
+          <h1>Ask anything. Get the answer in the right mood.</h1>
+
+          <p>
+            Choose your current mood, ask your question, and receive a helpful
+            answer written in a tone that feels simple, calm, detailed, or
+            motivating.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-link" href="/ask">Start asking</a>
+            <a class="secondary-link" href="/fun?assistantMode=funtalk">FunTalk AI</a>
+            <a class="secondary-link" href="/rooms">AI Rooms</a>
+            <a class="secondary-link" href="/room-chat?assistantMode=rooms&roomName=Study%20Room&mood=confused&language=English&answerLength=Medium&humorMode=false&supportiveLine=true&studyMode=true&focusMode=false">Study Room</a>
+            <a class="secondary-link" href="/games">FunGames AI</a>
+            <a class="secondary-link" href="#preview">View preview</a>
+          </div>
+        </div>
+
+        <aside class="preview-card" aria-label="MoodAnswer AI preview">
+          <div class="window-dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="mini-question">
+            <small>Question</small>
+            <p>What is an operating system?</p>
+          </div>
+
+          <div class="mini-moods" aria-label="Mood examples">
+            <span>😊 Normal</span>
+            <span class="active">🤔 Confused</span>
+            <span>😟 Stressed</span>
+            <span>😢 Sad</span>
+            <span>🔥 Curious</span>
+            <span>😴 Tired</span>
+          </div>
+
+          <div class="mini-answer">
+            <small>Mood-aware answer</small>
+            <p>
+              An operating system is the main software that helps your computer
+              or phone work. Think of it like the manager of the device.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="mode-options" aria-label="Choose assistant mode">
+        <article class="mode-card">
+          <span class="mode-icon">💡</span>
+          <div>
+            <p class="section-label">Question mode</p>
+            <h2>MoodAnswer AI</h2>
+            <p>
+              Ask study, coding, science, or daily questions and get answers
+              adjusted to your selected mood.
+            </p>
+          </div>
+          <a class="secondary-link" href="/ask">Ask a question</a>
+        </article>
+
+        <article class="mode-card fun-mode-card">
+          <span class="mode-icon">🎮</span>
+          <div>
+            <p class="section-label">Fun mode</p>
+            <h2>FunTalk AI</h2>
+            <p>
+              Chat casually, get jokes, play mini-games, ask random fun
+              questions, or relax with a friendly safe vibe.
+            </p>
+          </div>
+          <a class="primary-link" href="/fun?assistantMode=funtalk&mood=bored&language=Hinglish&answerLength=Medium&humorMode=true&supportiveLine=true&studyMode=false&focusMode=false">
+            Start fun chat
+          </a>
+        </article>
+
+        <article class="mode-card rooms-mode-card">
+          <span class="mode-icon">🏠</span>
+          <div>
+            <p class="section-label">Adaptive rooms</p>
+            <h2>AI Rooms</h2>
+            <p>
+              Pick a room like Coding Help, Meme Zone, Gaming Lounge, Study
+              Room, or Late Night Talk for a different chat vibe.
+            </p>
+          </div>
+          <a class="primary-link" href="/rooms">Choose a room</a>
+        </article>
+
+        <article class="mode-card study-mode-card">
+          <span class="mode-icon">📚</span>
+          <div>
+            <p class="section-label">Study focus</p>
+            <h2>Study Room</h2>
+            <p>
+              Learn concepts step by step with calm explanations, notes,
+              summaries, quizzes, and rain plus piano focus mode.
+            </p>
+          </div>
+          <a class="primary-link" href="/room-chat?assistantMode=rooms&roomName=Study%20Room&mood=confused&language=English&answerLength=Medium&humorMode=false&supportiveLine=true&studyMode=true&focusMode=false">
+            Open Study Room
+          </a>
+        </article>
+
+        <article class="mode-card games-mode-card">
+          <span class="mode-icon">🎲</span>
+          <div>
+            <p class="section-label">Mini-games</p>
+            <h2>FunGames AI</h2>
+            <p>
+              Play safe interactive games like Quiz Challenge, Riddles, Emoji
+              Game, Rapid Fire, and Would You Rather.
+            </p>
+          </div>
+          <a class="primary-link" href="/games">Play games</a>
+        </article>
+      </section>
+
+      <section class="streak-section" aria-label="MoodAnswer AI progress streaks">
+        <article class="streak-card learning-streak">
+          <span class="streak-icon">🔥</span>
+          <div>
+            <strong><span data-streak-stat="learningStreak">7</span> day</strong>
+            <p>learning streak</p>
+          </div>
+        </article>
+
+        <article class="streak-card questions-streak">
+          <span class="streak-icon">⭐</span>
+          <div>
+            <strong><span data-streak-stat="questionsAsked">250</span></strong>
+            <p>questions asked</p>
+          </div>
+        </article>
+
+        <article class="streak-card games-streak">
+          <span class="streak-icon">🎮</span>
+          <div>
+            <strong><span data-streak-stat="gamesCompleted">15</span></strong>
+            <p>games completed</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <article class="feature-card">
+          <span class="feature-icon">🧠</span>
+          <h3>Smart tone</h3>
+          <p>
+            The same answer can become simple, calm, detailed, or short based
+            on the selected mood.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">💬</span>
+          <h3>Chat-style flow</h3>
+          <p>
+            A familiar question box, mood cards, and clear response panel make
+            the assistant easy to use.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">🔒</span>
+          <h3>Safer answers</h3>
+          <p>
+            The assistant answers directly, avoids false claims, and refuses
+            harmful or illegal requests politely.
+          </p>
+        </article>
+      </section>
+
+      <div class="feature-link-row">
+        <a class="secondary-link" href="/features">Explore all features</a>
+      </div>
+
+      <!-- Answer Preview Section -->
+      <section id="preview" class="answer-preview">
+        <div id="result" class="answer-card" aria-live="polite">
+          <div class="answer-top">
+            <div>
+              <p class="section-label">Answer preview</p>
+              <h2 id="resultTitle">Here is your mood-aware answer</h2>
+            </div>
+
+            <span id="selectedMoodPill" class="mood-pill">Mood: Confused</span>
+          </div>
+
+          <div class="question-preview">
+            <small>Your question</small>
+            <p id="questionPreview">What is an operating system?</p>
+          </div>
+
+          <div class="answer-content">
+            <small>Answer</small>
+
+            <p id="resultBody">
+              An operating system is the main software that helps a computer or
+              phone work. It manages apps, files, memory, keyboard, screen, and
+              other hardware.
+            </p>
+
+            <div class="support-line">
+              <small>Supportive line</small>
+              <p id="resultNudge">
+                Don’t worry, this is a basic computer concept. You can
+                understand it step by step.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 MoodAnswer AI. Built for clear, safe, mood-aware answers.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/streaks.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/moods.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

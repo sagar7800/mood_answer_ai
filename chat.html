@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat | MoodAnswer AI</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body class="flow-body">
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="/" aria-label="MoodAnswer AI home">
+          <span class="logo-icon">✦</span>
+          <span>
+            <strong>MoodAnswer AI</strong>
+            <small>Mood-aware Q&A</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/ask">Ask</a>
+          <a href="/fun?assistantMode=funtalk">FunTalk</a>
+          <a href="/rooms">Rooms</a>
+          <a href="/games">Games</a>
+          <a href="/history">History</a>
+          <a href="/features">Features</a>
+          <a href="/settings">Settings</a>
+        </nav>
+
+        <div class="session-actions">
+          <a id="newChatLink" class="ghost-button" href="/ask">New chat</a>
+          <span id="sessionUser" class="status-pill">Signed in</span>
+          <button id="logoutButton" class="ghost-button" type="button">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flow-page">
+      <section id="flowHero" class="flow-hero">
+        <p id="flowKicker" class="flow-kicker">MoodAnswer AI</p>
+        <h1 id="flowHeroTitle">Ask anything. Get mood-aware answer.</h1>
+        <p id="flowHeroText">
+          Type or speak a question, then get a helpful answer in the selected tone.
+        </p>
+      </section>
+
+      <section id="flowChat" class="flow-chat" aria-live="polite" hidden>
+        <div id="flowMessages" class="flow-messages"></div>
+      </section>
+
+      <form id="chatForm" class="flow-composer" aria-label="Ask MoodAnswer AI">
+        <input id="chatMood" type="hidden" name="mood" value="normal" />
+        <input id="chatLanguage" type="hidden" name="language" value="English" />
+        <input id="chatAnswerLength" type="hidden" name="answerLength" value="Medium" />
+        <input id="chatHumorMode" type="hidden" name="humorMode" value="true" />
+        <input id="chatSupportiveLine" type="hidden" name="supportiveLine" value="true" />
+        <input id="chatStudyMode" type="hidden" name="studyMode" value="false" />
+        <input id="chatFocusMode" type="hidden" name="focusMode" value="false" />
+        <input id="chatAssistantMode" type="hidden" name="assistantMode" value="moodanswer" />
+        <input id="chatRoomName" type="hidden" name="roomName" value="" />
+        <input id="chatGameMode" type="hidden" name="gameMode" value="" />
+
+        <div class="flow-composer-inner">
+          <label class="sr-only" for="chatQuestion">Your question</label>
+          <textarea
+            id="chatQuestion"
+            name="question"
+            rows="1"
+            placeholder="Ask your question..."
+            required
+          ></textarea>
+
+          <button
+            class="voice-button flow-voice-button"
+            type="button"
+            data-voice-target="chatQuestion"
+            aria-label="Voice search"
+            title="Voice search"
+          >
+            <svg
+              class="voice-icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Z" />
+              <path d="M19 11a7 7 0 0 1-14 0" />
+              <path d="M12 18v3" />
+              <path d="M8 21h8" />
+            </svg>
+          </button>
+
+          <button id="chatSubmit" class="flow-send-button" type="submit">
+            Send
+          </button>
+
+          <label class="voice-chat-toggle">
+            <input id="voiceChatMode" type="checkbox" name="voiceChatMode" />
+            <span class="voice-chat-toggle-icon" aria-hidden="true">
+              <svg class="voice-icon" viewBox="0 0 24 24" focusable="false">
+                <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+                <path d="M16 9a5 5 0 0 1 0 6" />
+                <path d="M19 6a9 9 0 0 1 0 12" />
+              </svg>
+            </span>
+            <span>Voice chat</span>
+          </label>
+
+          <small
+            class="voice-status flow-voice-status"
+            data-voice-status
+            aria-live="polite"
+          ></small>
+
+          <div id="soundPanel" class="sound-mode-panel" hidden>
+            <button
+              id="soundToggle"
+              class="sound-toggle"
+              type="button"
+              aria-pressed="false"
+            >
+              🎵 Sound Off
+            </button>
+            <span id="soundStatus" class="sound-status">
+              Background sound mode
+            </span>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/rooms.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/streaks.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/voice.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head", { title }) %>
+  </head>
+
+  <body>
+    <%- include("../partials/navbar", { currentUser }) %>
+    <main>
+      <%- body %>
+    </main>
+    <%- include("../partials/footer") %>
+  </body>
+</html>

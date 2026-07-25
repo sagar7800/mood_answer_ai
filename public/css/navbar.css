@@ -1,0 +1,143 @@
+/* Navigation, logo, session controls, and shared header pills. */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(217, 226, 239, 0.84);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+}
+
+.nav-container,
+.hero,
+.mode-options,
+.rooms-hero,
+.rooms-grid,
+.ask-section,
+.features,
+.answer-preview {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.nav-container {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: max-content;
+}
+
+.logo-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(49, 92, 253, 0.22);
+  font-weight: 900;
+}
+
+.logo strong {
+  display: block;
+  color: var(--deep);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.logo small {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #475467;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.nav-links a:hover,
+.nav-links .active,
+.auth-switch a:hover {
+  color: var(--blue);
+}
+
+.session-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.status-pill,
+.privacy-pill,
+.mood-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: #eef4ff;
+  color: #2447c9;
+  font-size: 0.85rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.status-pill {
+  position: relative;
+  max-width: 170px;
+  min-height: 40px;
+  border: 1px solid #d4ddff;
+  background: linear-gradient(135deg, #eef4ff, #f8fbff);
+  padding-left: 28px;
+  overflow: hidden;
+  color: var(--blue-dark);
+  text-overflow: ellipsis;
+}
+
+.status-pill::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.13);
+}
+
+.ghost-button {
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  padding: 8px 14px;
+  font-weight: 900;
+}
+
+.ghost-button:hover {
+  border-color: #b7c8ff;
+  color: var(--blue);
+}
+
+.mood-pill {
+  background: #ecfdf3;
+  color: var(--teal);
+}

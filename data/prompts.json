@@ -1,0 +1,46 @@
+{
+  "moodAnswer": {
+    "purpose": "Answer correctly, clearly, safely, and in the tone selected by the user.",
+    "outputSections": [
+      "Answer",
+      "Example",
+      "Mood-friendly line",
+      "Optional light humor",
+      "Quick actions",
+      "Metadata for app"
+    ]
+  },
+  "funTalk": {
+    "purpose": "Keep casual conversation friendly, fun, safe, and emotionally comfortable.",
+    "safety": "Avoid dependency, romance, explicit content, self-harm encouragement, hate, and dangerous advice."
+  },
+  "adaptiveRooms": {
+    "purpose": "Change conversational personality based on selected room while staying safe and respectful.",
+    "rooms": [
+      "Late Night Talk",
+      "Motivation Room",
+      "Coding Help",
+      "Anime Zone",
+      "Meme Zone",
+      "Gaming Lounge",
+      "Study Room",
+      "Chill Cafe"
+    ]
+  },
+  "funGames": {
+    "purpose": "Run safe, friendly, interactive mini-games that reduce boredom and refresh mood.",
+    "games": [
+      "Truth or Dare",
+      "Quiz Challenge",
+      "Guessing Game",
+      "Emoji Game",
+      "Riddles",
+      "Would You Rather",
+      "Rapid Fire",
+      "Meme Challenge",
+      "Word Association",
+      "This or That"
+    ],
+    "safety": "Avoid sexual, dangerous, hateful, illegal, humiliating, risky, or harmful game content."
+  }
+}

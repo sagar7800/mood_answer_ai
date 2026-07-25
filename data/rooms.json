@@ -1,0 +1,66 @@
+[
+  {
+    "id": "late-night-talk",
+    "name": "Late Night Talk",
+    "defaultMood": "tired",
+    "defaultLanguage": "Hinglish",
+    "theme": "soft-night",
+    "description": "Calm, cozy, thoughtful chats with soft late-night energy."
+  },
+  {
+    "id": "motivation-room",
+    "name": "Motivation Room",
+    "defaultMood": "normal",
+    "defaultLanguage": "Hinglish",
+    "theme": "energetic-orange",
+    "description": "Clean energy, small actions, focus, and positive momentum."
+  },
+  {
+    "id": "coding-help",
+    "name": "Coding Help",
+    "defaultMood": "confused",
+    "defaultLanguage": "English",
+    "theme": "code-dark",
+    "description": "Beginner-friendly coding explanations, debugging, and projects."
+  },
+  {
+    "id": "anime-zone",
+    "name": "Anime Zone",
+    "defaultMood": "excited",
+    "defaultLanguage": "Hinglish",
+    "theme": "anime-pop",
+    "description": "Anime talk, recommendations, character debates, and fandom fun."
+  },
+  {
+    "id": "meme-zone",
+    "name": "Meme Zone",
+    "defaultMood": "bored",
+    "defaultLanguage": "Hinglish",
+    "theme": "meme-pop",
+    "description": "Short, punchy, safe meme-style replies and relatable humor."
+  },
+  {
+    "id": "gaming-lounge",
+    "name": "Gaming Lounge",
+    "defaultMood": "happy",
+    "defaultLanguage": "Hinglish",
+    "theme": "gaming-neon",
+    "description": "Game talk, recommendations, squad vibes, and friendly strategy."
+  },
+  {
+    "id": "study-room",
+    "name": "Study Room",
+    "defaultMood": "confused",
+    "defaultLanguage": "English",
+    "theme": "study-focus",
+    "description": "Calm teaching, notes, quizzes, summaries, and easy explanations."
+  },
+  {
+    "id": "chill-cafe",
+    "name": "Chill Cafe",
+    "defaultMood": "normal",
+    "defaultLanguage": "Hinglish",
+    "theme": "chill-cafe",
+    "description": "Peaceful casual talk about hobbies, food, music, and relaxing."
+  }
+]

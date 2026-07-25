@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FunGames AI | MoodAnswer AI</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="/" aria-label="MoodAnswer AI home">
+          <span class="logo-icon">✦</span>
+          <span>
+            <strong>MoodAnswer AI</strong>
+            <small>Safe mini-games</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/ask">Ask</a>
+          <a href="/fun?assistantMode=funtalk">FunTalk</a>
+          <a href="/rooms">Rooms</a>
+          <a class="active" href="/games">Games</a>
+          <a href="/history">History</a>
+          <a href="/features">Features</a>
+          <a href="/settings">Settings</a>
+        </nav>
+
+        <div class="session-actions">
+          <span id="sessionUser" class="status-pill">Signed in</span>
+          <button id="logoutButton" class="ghost-button" type="button">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="rooms-hero">
+        <p class="badge">FunGames AI</p>
+        <h1>Pick a safe mini-game and start playing.</h1>
+        <p>
+          Relax, reduce boredom, and refresh your mood with playful AI games
+          that stay friendly, short, and emotionally safe.
+        </p>
+      </section>
+
+      <section class="rooms-grid" aria-label="FunGames AI game options">
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=Truth%20or%20Dare&mood=bored&language=Hinglish&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">🎭</span>
+          <strong>Truth or Dare</strong>
+          <p>Safe truths and harmless playful dares.</p>
+        </a>
+
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=Quiz%20Challenge&mood=curious&language=English&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">🧠</span>
+          <strong>Quiz Challenge</strong>
+          <p>Quick quiz rounds with score and streak energy.</p>
+        </a>
+
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=Guessing%20Game&mood=bored&language=Hinglish&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">🔍</span>
+          <strong>Guessing Game</strong>
+          <p>Clues first, then you guess the answer.</p>
+        </a>
+
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=Emoji%20Game&mood=happy&language=Hinglish&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">😀</span>
+          <strong>Emoji Game</strong>
+          <p>Guess movies, games, anime, or phrases from emojis.</p>
+        </a>
+
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=Riddles&mood=curious&language=English&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">🧩</span>
+          <strong>Riddles</strong>
+          <p>Easy-to-medium riddles without frustration.</p>
+        </a>
+
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=Would%20You%20Rather&mood=bored&language=Hinglish&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">🤔</span>
+          <strong>Would You Rather</strong>
+          <p>Funny choices that keep the chat moving.</p>
+        </a>
+
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=Rapid%20Fire&mood=happy&language=Hinglish&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">⚡</span>
+          <strong>Rapid Fire</strong>
+          <p>Fast one-by-one questions with quick replies.</p>
+        </a>
+
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=Meme%20Challenge&mood=bored&language=Hinglish&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">😂</span>
+          <strong>Meme Challenge</strong>
+          <p>Relatable meme prompts and safe internet humor.</p>
+        </a>
+
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=Word%20Association&mood=normal&language=English&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">🔤</span>
+          <strong>Word Association</strong>
+          <p>Reply with a related word and continue the chain.</p>
+        </a>
+
+        <a class="room-card" href="/game-chat?assistantMode=fungames&gameMode=This%20or%20That&mood=tired&language=Hinglish&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">🔥</span>
+          <strong>This or That</strong>
+          <p>Simple quick choices for an easy game vibe.</p>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 MoodAnswer AI. Built for clear, safe, mood-aware answers.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

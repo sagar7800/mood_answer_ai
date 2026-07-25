@@ -1,0 +1,236 @@
+/* Mobile-first breakpoints for tablet and desktop adjustments. */
+@media (max-width: 940px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 42px;
+  }
+
+  .preview-card {
+    max-width: 620px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mood-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .preference-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .mode-options {
+    grid-template-columns: 1fr;
+  }
+
+  .rooms-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .features-hero {
+    grid-template-columns: 1fr;
+    padding-top: 42px;
+  }
+
+  .features-grid,
+  .workflow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-container,
+  .hero,
+  .mode-options,
+  .rooms-hero,
+  .rooms-grid,
+  .ask-section,
+  .features,
+  .answer-preview,
+  .features-hero,
+  .feature-page-section,
+  .feature-cta,
+  .feature-link-row {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .nav-container {
+    min-height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 14px 0;
+  }
+
+  .session-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .status-pill {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .ask-card,
+  .answer-card,
+  .history-card,
+  .login-panel {
+    padding: 20px;
+  }
+
+  .ask-header,
+  .answer-top,
+  .history-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .privacy-pill,
+  .mood-pill {
+    white-space: normal;
+  }
+
+  .mini-moods {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mode-card {
+    grid-template-columns: 1fr;
+  }
+
+  .rooms-hero {
+    padding-top: 38px;
+  }
+
+  .rooms-grid {
+    grid-template-columns: 1fr;
+    padding-bottom: 42px;
+  }
+
+  .preference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .setting-toggle {
+    min-height: 46px;
+  }
+
+  .flow-page {
+    padding-bottom: 176px;
+  }
+
+  .flow-hero {
+    width: min(100% - 20px, 860px);
+    min-height: calc(100vh - 220px);
+  }
+
+  .flow-chat {
+    width: min(100% - 20px, 880px);
+  }
+
+  .flow-bubble {
+    max-width: 100%;
+  }
+
+  .flow-composer {
+    padding: 10px;
+  }
+
+  .features-grid,
+  .workflow {
+    grid-template-columns: 1fr;
+  }
+
+  .mood-table-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px;
+  }
+
+  .feature-cta {
+    padding: 24px;
+  }
+
+  .feature-cta a {
+    width: 100%;
+  }
+
+  .history-section {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .history-layout {
+    width: min(100% - 20px, 1180px);
+    grid-template-columns: 1fr;
+  }
+
+  .history-detail {
+    padding: 20px;
+  }
+
+  .history-item-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Authentication responsive layout. */
+@media (max-width: 950px) {
+  .login-shell {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+
+  .brand-card {
+    min-height: auto;
+    padding: 34px;
+  }
+
+  .auth-logo {
+    margin-bottom: 50px;
+  }
+
+  .brand-card h2 {
+    font-size: 38px;
+  }
+
+  .login-panel {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .login-shell {
+    padding: 18px;
+  }
+
+  .brand-side {
+    display: none;
+  }
+
+  .login-panel {
+    padding: 28px 22px;
+    border-radius: 26px;
+  }
+
+  .login-panel h1 {
+    font-size: 34px;
+  }
+
+  .form-options {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

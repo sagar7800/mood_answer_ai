@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Rooms | MoodAnswer AI</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="/" aria-label="MoodAnswer AI home">
+          <span class="logo-icon">✦</span>
+          <span>
+            <strong>MoodAnswer AI</strong>
+            <small>Adaptive AI rooms</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/ask">Ask</a>
+          <a href="/fun?assistantMode=funtalk">FunTalk</a>
+          <a class="active" href="/rooms">Rooms</a>
+          <a href="/games">Games</a>
+          <a href="/history">History</a>
+          <a href="/features">Features</a>
+          <a href="/settings">Settings</a>
+        </nav>
+
+        <div class="session-actions">
+          <span id="sessionUser" class="status-pill">Signed in</span>
+          <button id="logoutButton" class="ghost-button" type="button">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="rooms-hero">
+        <p class="badge">Adaptive AI Rooms</p>
+        <h1>Choose the vibe before you chat.</h1>
+        <p>
+          Each room changes the conversation style, energy, humor, and structure
+          while keeping replies safe, respectful, and emotionally comfortable.
+        </p>
+      </section>
+
+      <section class="rooms-grid" aria-label="Adaptive AI room options">
+        <a class="room-card" href="/room-chat?assistantMode=rooms&roomName=Late%20Night%20Talk&mood=tired&language=Hinglish&answerLength=Medium&humorMode=true&supportiveLine=true&studyMode=false&focusMode=false">
+          <span class="room-icon">🌙</span>
+          <strong>Late Night Talk</strong>
+          <p>Calm, cozy, thoughtful chats with soft late-night energy and lo-fi sound mode.</p>
+        </a>
+
+        <a class="room-card" href="/room-chat?assistantMode=rooms&roomName=Motivation%20Room&mood=normal&language=Hinglish&answerLength=Medium&humorMode=true&supportiveLine=true&studyMode=false&focusMode=false">
+          <span class="room-icon">🔥</span>
+          <strong>Motivation Room</strong>
+          <p>Clean energy, small actions, focus, and positive momentum.</p>
+        </a>
+
+        <a class="room-card" href="/room-chat?assistantMode=rooms&roomName=Coding%20Help&mood=confused&language=English&answerLength=Medium&humorMode=false&supportiveLine=true&studyMode=true&focusMode=false">
+          <span class="room-icon">💻</span>
+          <strong>Coding Help</strong>
+          <p>Beginner-friendly coding explanations, debugging, and projects.</p>
+        </a>
+
+        <a class="room-card" href="/room-chat?assistantMode=rooms&roomName=Anime%20Zone&mood=excited&language=Hinglish&answerLength=Medium&humorMode=true&supportiveLine=true&studyMode=false&focusMode=false">
+          <span class="room-icon">🎌</span>
+          <strong>Anime Zone</strong>
+          <p>Anime talk, recommendations, character debates, and fandom fun.</p>
+        </a>
+
+        <a class="room-card" href="/room-chat?assistantMode=rooms&roomName=Meme%20Zone&mood=bored&language=Hinglish&answerLength=Short&humorMode=true&supportiveLine=true&studyMode=false&focusMode=true">
+          <span class="room-icon">😂</span>
+          <strong>Meme Zone</strong>
+          <p>Short, punchy, safe meme-style replies and relatable humor.</p>
+        </a>
+
+        <a class="room-card" href="/room-chat?assistantMode=rooms&roomName=Gaming%20Lounge&mood=happy&language=Hinglish&answerLength=Medium&humorMode=true&supportiveLine=true&studyMode=false&focusMode=false">
+          <span class="room-icon">🎮</span>
+          <strong>Gaming Lounge</strong>
+          <p>Game talk, recommendations, squad vibes, and friendly strategy.</p>
+        </a>
+
+        <a class="room-card" href="/room-chat?assistantMode=rooms&roomName=Study%20Room&mood=confused&language=English&answerLength=Medium&humorMode=false&supportiveLine=true&studyMode=true&focusMode=false">
+          <span class="room-icon">📚</span>
+          <strong>Study Room</strong>
+          <p>Calm teaching, notes, summaries, and rain plus piano focus mode.</p>
+        </a>
+
+        <a class="room-card" href="/room-chat?assistantMode=rooms&roomName=Chill%20Cafe&mood=normal&language=Hinglish&answerLength=Medium&humorMode=true&supportiveLine=true&studyMode=false&focusMode=false">
+          <span class="room-icon">☕</span>
+          <strong>Chill Cafe</strong>
+          <p>Peaceful casual talk with rain and soft piano background mode.</p>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 MoodAnswer AI. Built for clear, safe, mood-aware answers.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/rooms.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

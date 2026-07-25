@@ -1,0 +1,107 @@
+{
+  "default-light": {
+    "name": "Default Light",
+    "background": "#f4f7fb",
+    "accent": "#315cfd",
+    "mood": "normal",
+    "style": "clean, balanced, modern"
+  },
+  "clean-indigo": {
+    "name": "Clean Indigo",
+    "background": "#eef4ff",
+    "accent": "#315cfd",
+    "mood": "confused",
+    "style": "simple, structured, easy-to-read"
+  },
+  "calm-blue": {
+    "name": "Calm Blue",
+    "background": "#eff8ff",
+    "accent": "#2563eb",
+    "mood": "stressed",
+    "style": "soft, breathable, calming"
+  },
+  "soft-purple": {
+    "name": "Soft Purple",
+    "background": "#f7f2ff",
+    "accent": "#7c3aed",
+    "mood": "sad",
+    "style": "cozy, warm, gentle"
+  },
+  "neutral-gray": {
+    "name": "Neutral Focus",
+    "background": "#f6f7f9",
+    "accent": "#475569",
+    "mood": "angry",
+    "style": "stable, clean, distraction-free"
+  },
+  "energetic-orange": {
+    "name": "Energetic Orange",
+    "background": "#fff7ed",
+    "accent": "#d97706",
+    "mood": "curious",
+    "style": "dynamic, interactive, energetic"
+  },
+  "soft-night": {
+    "name": "Soft Night",
+    "background": "#0b1220",
+    "accent": "#93c5fd",
+    "mood": "tired",
+    "style": "dark, low-brightness, easy on eyes"
+  },
+  "fun-chat": {
+    "name": "FunTalk Fresh",
+    "background": "#ecfeff",
+    "accent": "#0f766e",
+    "room": "FunTalk AI",
+    "style": "friendly, fresh, playful"
+  },
+  "fun-games": {
+    "name": "FunGames Play",
+    "background": "#f0fdf4",
+    "accent": "#16a34a",
+    "room": "FunGames AI",
+    "style": "safe, playful, interactive"
+  },
+  "code-dark": {
+    "name": "Code Glow",
+    "background": "#07111f",
+    "accent": "#38bdf8",
+    "room": "Coding Help",
+    "style": "terminal-inspired, focused, developer-friendly"
+  },
+  "anime-pop": {
+    "name": "Anime Pop",
+    "background": "#fff1f8",
+    "accent": "#db2777",
+    "room": "Anime Zone",
+    "style": "colorful, expressive, fandom-friendly"
+  },
+  "meme-pop": {
+    "name": "Meme Pop",
+    "background": "#f7fee7",
+    "accent": "#65a30d",
+    "room": "Meme Zone",
+    "style": "playful, quick, internet-culture friendly"
+  },
+  "gaming-neon": {
+    "name": "Gaming Neon",
+    "background": "#090b1a",
+    "accent": "#22d3ee",
+    "room": "Gaming Lounge",
+    "style": "cyber, energetic, gamer-focused"
+  },
+  "study-focus": {
+    "name": "Study Focus",
+    "background": "#f8fafc",
+    "accent": "#2563eb",
+    "room": "Study Room",
+    "style": "academic, clear, focused"
+  },
+  "chill-cafe": {
+    "name": "Chill Cafe",
+    "background": "#fbf7f1",
+    "accent": "#9a5b28",
+    "room": "Chill Cafe",
+    "style": "warm, calm, relaxed"
+  }
+}

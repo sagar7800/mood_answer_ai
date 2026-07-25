@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask | MoodAnswer AI</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="/" aria-label="MoodAnswer AI home">
+          <span class="logo-icon">✦</span>
+          <span>
+            <strong>MoodAnswer AI</strong>
+            <small>Mood-aware Q&A</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="#ask">Search</a>
+          <a href="/rooms">Rooms</a>
+          <a href="/games">Games</a>
+          <a href="/history">History</a>
+          <a href="/features">Features</a>
+          <a href="/settings">Settings</a>
+        </nav>
+
+        <div class="session-actions">
+          <span id="sessionUser" class="status-pill">Signed in</span>
+          <button id="logoutButton" class="ghost-button" type="button">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="search-page">
+      <section class="search-hero">
+        <p class="badge">Search with mood-aware AI</p>
+        <h1>Ask your question here.</h1>
+        <p>
+          Type any question, choose your mood, and MoodAnswer AI will respond in
+          the right tone.
+        </p>
+      </section>
+
+      <section id="ask" class="ask-section">
+        <form id="answerForm" class="ask-card" data-chat-redirect="true">
+          <div class="ask-header">
+            <div>
+              <p class="section-label">Search panel</p>
+              <h2>What do you want to know?</h2>
+            </div>
+
+            <span class="privacy-pill">Privacy-friendly mood selection</span>
+          </div>
+
+          <label class="field-label" for="question">Your question</label>
+
+          <div class="voice-input-wrap">
+            <textarea
+              id="question"
+              name="question"
+              rows="6"
+              placeholder="Search or ask anything you want to know..."
+              required
+            ></textarea>
+
+            <button
+              class="voice-button"
+              type="button"
+              data-voice-target="question"
+              aria-label="Voice search"
+              title="Voice search"
+            >
+              <svg
+                class="voice-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Z" />
+                <path d="M19 11a7 7 0 0 1-14 0" />
+                <path d="M12 18v3" />
+                <path d="M8 21h8" />
+              </svg>
+            </button>
+
+            <small class="voice-status" data-voice-status aria-live="polite"></small>
+          </div>
+
+          <div class="suggestions" aria-label="Question suggestions">
+            <button type="button" data-question="What is an operating system?">
+              What is an operating system?
+            </button>
+
+            <button type="button" data-question="How can I study better?">
+              How can I study better?
+            </button>
+
+            <button type="button" data-question="Explain AI in simple words">
+              Explain AI in simple words
+            </button>
+          </div>
+
+          <div class="preference-grid" aria-label="Answer preferences">
+            <label class="setting-field">
+              <span>Language</span>
+              <select id="language" name="language">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Hinglish">Hinglish</option>
+              </select>
+            </label>
+
+            <label class="setting-field">
+              <span>Answer length</span>
+              <select id="answerLength" name="answerLength">
+                <option value="Medium">Medium</option>
+                <option value="Short">Short</option>
+                <option value="Detailed">Detailed</option>
+              </select>
+            </label>
+
+            <label class="setting-toggle">
+              <input type="checkbox" name="humorMode" checked />
+              <span>Humor</span>
+            </label>
+
+            <label class="setting-toggle">
+              <input type="checkbox" name="supportiveLine" checked />
+              <span>Supportive line</span>
+            </label>
+
+            <label class="setting-toggle">
+              <input type="checkbox" name="studyMode" />
+              <span>Study mode</span>
+            </label>
+
+            <label class="setting-toggle">
+              <input type="checkbox" name="focusMode" />
+              <span>Focus mode</span>
+            </label>
+          </div>
+
+          <fieldset>
+            <legend class="mood-title">How are you feeling right now?</legend>
+
+            <div class="mood-grid" role="radiogroup" aria-label="Mood">
+              <label class="mood-card">
+                <input type="radio" name="mood" value="normal" />
+                <span>
+                  <b>😊</b>
+                  <strong>Normal</strong>
+                  <small>Clear</small>
+                </span>
+              </label>
+
+              <label class="mood-card">
+                <input type="radio" name="mood" value="confused" checked />
+                <span>
+                  <b>🤔</b>
+                  <strong>Confused</strong>
+                  <small>Simple</small>
+                </span>
+              </label>
+
+              <label class="mood-card">
+                <input type="radio" name="mood" value="stressed" />
+                <span>
+                  <b>😟</b>
+                  <strong>Stressed</strong>
+                  <small>Calm</small>
+                </span>
+              </label>
+
+              <label class="mood-card">
+                <input type="radio" name="mood" value="sad" />
+                <span>
+                  <b>😢</b>
+                  <strong>Sad</strong>
+                  <small>Gentle</small>
+                </span>
+              </label>
+
+              <label class="mood-card">
+                <input type="radio" name="mood" value="angry" />
+                <span>
+                  <b>😡</b>
+                  <strong>Angry</strong>
+                  <small>Direct</small>
+                </span>
+              </label>
+
+              <label class="mood-card">
+                <input type="radio" name="mood" value="curious" />
+                <span>
+                  <b>🔥</b>
+                  <strong>Curious</strong>
+                  <small>Detailed</small>
+                </span>
+              </label>
+
+              <label class="mood-card">
+                <input type="radio" name="mood" value="tired" />
+                <span>
+                  <b>😴</b>
+                  <strong>Tired</strong>
+                  <small>Short</small>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <button id="submitButton" class="generate-btn" type="submit">
+            Search
+          </button>
+        </form>
+      </section>
+
+      <section id="preview" class="answer-preview">
+        <div id="result" class="answer-card" aria-live="polite" hidden>
+          <div class="answer-top">
+            <div>
+              <p class="section-label">Answer preview</p>
+              <h2 id="resultTitle">Here is your mood-aware answer</h2>
+            </div>
+
+            <span id="selectedMoodPill" class="mood-pill">Mood: Confused</span>
+          </div>
+
+          <div class="question-preview">
+            <small>Your question</small>
+            <p id="questionPreview">What is an operating system?</p>
+          </div>
+
+          <div class="answer-content">
+            <small>Answer</small>
+
+            <p id="resultBody"></p>
+
+            <div id="resultExampleWrap" class="example-line" hidden>
+              <small>Example</small>
+              <p id="resultExample"></p>
+            </div>
+
+            <div id="resultJokeWrap" class="joke-line" hidden>
+              <small>Light joke</small>
+              <p id="resultJoke"></p>
+            </div>
+
+            <div id="resultSupportWrap" class="support-line">
+              <small>Supportive line</small>
+              <p id="resultNudge"></p>
+            </div>
+
+            <div id="quickActionsWrap" class="quick-actions-line" hidden>
+              <small>Quick actions</small>
+              <div id="quickActionsList"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 MoodAnswer AI. Built for clear, safe, mood-aware answers.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/moods.js"></script>
+    <script src="js/voice.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

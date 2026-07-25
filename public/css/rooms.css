@@ -1,0 +1,151 @@
+/* Mode chooser and adaptive AI room selection UI. */
+.mode-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  padding: 18px 0 20px;
+}
+
+.mode-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.mode-card .primary-link,
+.mode-card .secondary-link {
+  grid-column: 1 / -1;
+  width: fit-content;
+}
+
+.mode-card h2 {
+  margin: 6px 0 8px;
+  color: var(--deep);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  letter-spacing: 0;
+}
+
+.mode-card p:not(.section-label) {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.fun-mode-card {
+  border-color: rgba(15, 118, 110, 0.18);
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(49, 92, 253, 0.06)),
+    var(--surface);
+}
+
+.fun-mode-card .mode-icon {
+  background: rgba(15, 118, 110, 0.11);
+}
+
+.rooms-mode-card {
+  border-color: rgba(217, 119, 6, 0.22);
+  background:
+    linear-gradient(135deg, rgba(217, 119, 6, 0.09), rgba(49, 92, 253, 0.05)),
+    var(--surface);
+}
+
+.rooms-mode-card .mode-icon {
+  background: rgba(217, 119, 6, 0.12);
+}
+
+.study-mode-card {
+  border-color: rgba(79, 70, 229, 0.2);
+  background:
+    linear-gradient(135deg, rgba(79, 70, 229, 0.09), rgba(14, 165, 233, 0.06)),
+    var(--surface);
+}
+
+.study-mode-card .mode-icon {
+  background: rgba(79, 70, 229, 0.12);
+}
+
+.games-mode-card {
+  border-color: rgba(15, 118, 110, 0.2);
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.09), rgba(217, 119, 6, 0.07)),
+    var(--surface);
+}
+
+.games-mode-card .mode-icon {
+  background: rgba(15, 118, 110, 0.12);
+}
+
+.rooms-hero {
+  max-width: 850px;
+  padding: 64px 0 26px;
+  text-align: center;
+}
+
+.rooms-hero h1 {
+  margin: 18px auto 18px;
+}
+
+.rooms-hero p:last-child {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #475467;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  padding: 20px 0 70px;
+}
+
+.room-card {
+  min-height: 224px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.room-card:hover {
+  transform: translateY(-3px);
+  border-color: #b7c8ff;
+  background: #fff;
+}
+
+.room-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #eef4ff;
+  font-size: 1.45rem;
+}
+
+.room-card strong {
+  color: var(--deep);
+  font-size: 1.15rem;
+  font-weight: 950;
+}
+
+.room-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}

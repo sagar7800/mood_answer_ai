@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | MoodAnswer AI</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="/" aria-label="MoodAnswer AI home">
+          <span class="logo-icon">✦</span>
+          <span>
+            <strong>MoodAnswer AI</strong>
+            <small>Adaptive settings</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/ask">Ask</a>
+          <a href="/rooms">Rooms</a>
+          <a href="/games">Games</a>
+          <a href="/history">History</a>
+          <a href="/features">Features</a>
+          <a class="active" href="/settings">Settings</a>
+        </nav>
+
+        <div class="session-actions">
+          <span id="sessionUser" class="status-pill">Signed in</span>
+          <button id="logoutButton" class="ghost-button" type="button">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="search-hero">
+        <p class="badge">Prompt settings</p>
+        <h1>Set your default AI behavior.</h1>
+        <p>
+          Choose default mood, language, answer length, humor, supportive line,
+          and adaptive theme settings for future conversations.
+        </p>
+      </section>
+
+      <section class="ask-section">
+        <form id="settingsForm" class="ask-card">
+          <div class="ask-header">
+            <div>
+              <p class="section-label">Defaults</p>
+              <h2>Conversation preferences</h2>
+            </div>
+            <span class="privacy-pill">Saved in this browser</span>
+          </div>
+
+          <div class="preference-grid">
+            <label class="setting-field">
+              <span>Default mood</span>
+              <select name="defaultMood">
+                <option value="normal">Normal</option>
+                <option value="confused">Confused</option>
+                <option value="stressed">Stressed</option>
+                <option value="sad">Sad</option>
+                <option value="angry">Angry</option>
+                <option value="curious">Curious</option>
+                <option value="tired">Tired</option>
+              </select>
+            </label>
+
+            <label class="setting-field">
+              <span>Default language</span>
+              <select name="defaultLanguage">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Hinglish">Hinglish</option>
+              </select>
+            </label>
+
+            <label class="setting-field">
+              <span>Answer length</span>
+              <select name="answerLength">
+                <option value="Medium">Medium</option>
+                <option value="Short">Short</option>
+                <option value="Detailed">Detailed</option>
+              </select>
+            </label>
+
+            <label class="setting-field">
+              <span>Theme preference</span>
+              <select name="themePreference">
+                <option value="adaptive">Mood adaptive</option>
+                <option value="auto">Auto by time</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+              </select>
+            </label>
+
+            <label class="setting-toggle">
+              <input type="checkbox" name="humorMode" checked />
+              <span>Humor</span>
+            </label>
+
+            <label class="setting-toggle">
+              <input type="checkbox" name="supportiveLine" checked />
+              <span>Supportive line</span>
+            </label>
+          </div>
+
+          <button class="generate-btn" type="submit">Save settings</button>
+          <p id="settingsMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/settings.js"></script>
+  </body>
+</html>

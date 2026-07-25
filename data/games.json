@@ -1,0 +1,82 @@
+[
+  {
+    "id": "truth-or-dare",
+    "name": "Truth or Dare",
+    "defaultMood": "bored",
+    "difficulty": "easy",
+    "energy": "playful",
+    "description": "Safe truths and harmless playful dares."
+  },
+  {
+    "id": "quiz-challenge",
+    "name": "Quiz Challenge",
+    "defaultMood": "curious",
+    "difficulty": "medium",
+    "energy": "focused",
+    "description": "Quick quiz rounds with score and streak energy."
+  },
+  {
+    "id": "guessing-game",
+    "name": "Guessing Game",
+    "defaultMood": "bored",
+    "difficulty": "easy",
+    "energy": "curious",
+    "description": "Clues first, then the user guesses the answer."
+  },
+  {
+    "id": "emoji-game",
+    "name": "Emoji Game",
+    "defaultMood": "happy",
+    "difficulty": "easy",
+    "energy": "fast",
+    "description": "Guess movies, anime, songs, games, or phrases from emojis."
+  },
+  {
+    "id": "riddles",
+    "name": "Riddles",
+    "defaultMood": "curious",
+    "difficulty": "medium",
+    "energy": "thoughtful",
+    "description": "Easy-to-medium fun riddles with hints."
+  },
+  {
+    "id": "would-you-rather",
+    "name": "Would You Rather",
+    "defaultMood": "bored",
+    "difficulty": "easy",
+    "energy": "playful",
+    "description": "Funny safe choices that keep the chat moving."
+  },
+  {
+    "id": "rapid-fire",
+    "name": "Rapid Fire",
+    "defaultMood": "happy",
+    "difficulty": "easy",
+    "energy": "fast",
+    "description": "Fast one-by-one questions with quick replies."
+  },
+  {
+    "id": "meme-challenge",
+    "name": "Meme Challenge",
+    "defaultMood": "bored",
+    "difficulty": "easy",
+    "energy": "chaotic-safe",
+    "description": "Relatable meme prompts and safe internet humor."
+  },
+  {
+    "id": "word-association",
+    "name": "Word Association",
+    "defaultMood": "normal",
+    "difficulty": "easy",
+    "energy": "calm",
+    "description": "The AI says a word and the user replies with a related word."
+  },
+  {
+    "id": "this-or-that",
+    "name": "This or That",
+    "defaultMood": "tired",
+    "difficulty": "easy",
+    "energy": "cozy",
+    "description": "Simple quick choices for an easy game vibe."
+  }
+]

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History | MoodAnswer AI</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="/" aria-label="MoodAnswer AI home">
+          <span class="logo-icon">✦</span>
+          <span>
+            <strong>MoodAnswer AI</strong>
+            <small>Mood-aware Q&A</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/ask">Ask</a>
+          <a href="/rooms">Rooms</a>
+          <a href="/games">Games</a>
+          <a class="active" href="/history">History</a>
+          <a href="/features">Features</a>
+          <a href="/settings">Settings</a>
+        </nav>
+
+        <div class="session-actions">
+          <span id="sessionUser" class="status-pill">Signed in</span>
+          <button id="logoutButton" class="ghost-button" type="button">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="history-page">
+      <section class="search-hero">
+        <p class="badge">Saved answer history</p>
+        <h1>Your past questions.</h1>
+        <p>
+          Select any saved question to open the full mood-aware answer and
+          supportive line.
+        </p>
+      </section>
+
+      <section class="history-layout">
+        <div class="history-card">
+          <div class="history-header">
+            <div>
+              <p class="section-label">Questions only</p>
+              <h2>Saved questions</h2>
+            </div>
+
+            <button id="refreshHistoryButton" class="ghost-button" type="button">
+              Refresh
+            </button>
+          </div>
+
+          <div id="historyQuestionList" class="history-question-list" aria-live="polite">
+            <p class="history-empty">Loading history...</p>
+          </div>
+        </div>
+
+        <aside id="historyDetail" class="history-detail" hidden>
+          <div class="history-detail-top">
+            <span id="detailMood" class="mood-pill">Mood: Normal</span>
+            <div class="history-detail-actions">
+              <time id="detailDate">Saved</time>
+              <button id="detailDeleteButton" class="history-delete-button" type="button">
+                Delete
+              </button>
+            </div>
+          </div>
+
+          <div class="question-preview">
+            <small>Question</small>
+            <p id="detailQuestion"></p>
+          </div>
+
+          <div class="answer-content">
+            <small>Answer</small>
+            <p id="detailAnswer"></p>
+
+            <div id="detailExampleWrap" class="example-line" hidden>
+              <small>Example</small>
+              <p id="detailExample"></p>
+            </div>
+
+            <div id="detailJokeWrap" class="joke-line" hidden>
+              <small>Light joke</small>
+              <p id="detailJoke"></p>
+            </div>
+
+            <div class="support-line">
+              <small>Supportive line</small>
+              <p id="detailSupport"></p>
+            </div>
+
+            <div id="detailActionsWrap" class="quick-actions-line" hidden>
+              <small>Quick actions</small>
+              <div id="detailActions"></div>
+            </div>
+
+            <div id="detailMetadataWrap" class="metadata-line" hidden>
+              <small>Metadata for app</small>
+              <p id="detailMetadata"></p>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 MoodAnswer AI. Built for clear, safe, mood-aware answers.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/storage.js"></script>
+  </body>
+</html>

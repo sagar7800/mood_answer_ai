@@ -1,0 +1,128 @@
+/* Streak cards and room sound controls. */
+.streak-section {
+  width: min(1180px, calc(100% - 32px));
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px auto 12px;
+}
+
+.streak-card {
+  display: flex;
+  min-height: 118px;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  transition:
+    transform var(--theme-motion) ease,
+    border-color var(--theme-motion) ease,
+    box-shadow var(--theme-motion) ease;
+}
+
+.streak-card:hover {
+  border-color: color-mix(in srgb, var(--theme-accent) 40%, var(--theme-border));
+  box-shadow:
+    var(--theme-shadow),
+    0 0 0 1px color-mix(in srgb, var(--theme-accent) 14%, transparent);
+  transform: translateY(-2px);
+}
+
+.streak-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--theme-accent-soft);
+  font-size: 1.6rem;
+}
+
+.streak-card strong {
+  display: block;
+  color: var(--deep);
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  font-weight: 950;
+  line-height: 1.05;
+}
+
+.streak-card p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.sound-mode-panel {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--theme-border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--theme-accent-soft) 62%, #fff);
+  padding: 10px;
+}
+
+.sound-toggle {
+  min-height: 40px;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--theme-accent), var(--theme-accent-strong));
+  color: #fff;
+  padding: 9px 14px;
+  font-size: 0.9rem;
+  font-weight: 950;
+  box-shadow: 0 14px 28px var(--theme-glow);
+}
+
+.sound-toggle[aria-pressed="true"] {
+  animation: soundPulse 2.2s ease-in-out infinite;
+}
+
+.sound-status {
+  color: var(--theme-muted);
+  font-size: 0.85rem;
+  font-weight: 900;
+  line-height: 1.45;
+  text-align: right;
+}
+
+@keyframes soundPulse {
+  0%,
+  100% {
+    filter: saturate(1);
+    transform: translateY(0);
+  }
+
+  50% {
+    filter: saturate(1.15);
+    transform: translateY(-1px);
+  }
+}
+
+@media (max-width: 820px) {
+  .streak-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .streak-section {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .sound-mode-panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .sound-status {
+    text-align: left;
+  }
+}

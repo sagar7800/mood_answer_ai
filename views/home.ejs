@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodAnswer AI</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body class="home-body">
+    <header class="navbar home-navbar">
+      <div class="nav-container">
+        <a class="logo" href="/" aria-label="MoodAnswer AI home">
+          <span class="logo-icon">✦</span>
+          <span>
+            <strong>MoodAnswer AI</strong>
+            <small>Adaptive AI workspace</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/ask">Ask</a>
+          <a href="/rooms">Rooms</a>
+          <a href="/games">Games</a>
+          <a href="/features">Features</a>
+          <a href="/history">History</a>
+        </nav>
+
+        <div class="session-actions">
+          <span id="sessionUser" class="status-pill">Signed in</span>
+          <button id="logoutButton" class="ghost-button" type="button">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="home-main">
+      <section class="home-hero" aria-labelledby="homeHeroTitle">
+        <div class="home-hero-copy">
+          <p class="home-eyebrow">Mood-aware AI assistant</p>
+
+          <h1 id="homeHeroTitle">Ask clearly. Learn calmly. Chat in the right tone.</h1>
+
+          <p class="home-hero-text">
+            MoodAnswer AI gives answers based on the user’s question, mood,
+            language, and preferred answer style. Simple for learning, calm for
+            stress, detailed for curiosity.
+          </p>
+
+          <div class="home-hero-actions" aria-label="Primary actions">
+            <a class="primary-link" href="/ask">Start asking</a>
+            <a class="secondary-link" href="/rooms">Choose a room</a>
+          </div>
+        </div>
+
+        <aside class="home-product" aria-label="Answer preview">
+          <div class="home-product-top">
+            <div>
+              <span class="home-product-label">Preview</span>
+              <strong>Mood-aware answer</strong>
+            </div>
+            <span class="home-status-dot">Ready</span>
+          </div>
+
+          <div class="home-chat-preview">
+            <div class="home-user-message">
+              <span>User</span>
+              <p>What is Java?</p>
+            </div>
+
+            <div class="home-ai-message">
+              <span>Mood: Confused</span>
+              <p>
+                Java is a programming language. You can use it to build apps,
+                websites, Android apps, and backend systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="home-controls-preview" aria-label="Answer settings">
+            <span>Simple</span>
+            <span>Safe</span>
+            <span>Hinglish</span>
+            <span>Study mode</span>
+          </div>
+
+          <a class="home-panel-button" href="/ask">Ask your first question</a>
+        </aside>
+      </section>
+
+      <section class="home-actions-section" aria-labelledby="homeActionsTitle">
+        <div class="home-section-head">
+          <p class="section-label">Main options</p>
+          <h2 id="homeActionsTitle">Choose what you want to do.</h2>
+          <p>
+            Only the buttons are actions, so it is clear what can be clicked.
+          </p>
+        </div>
+
+        <div class="home-action-grid">
+          <article class="home-action-card">
+            <span class="home-card-icon">01</span>
+            <h3>Ask a question</h3>
+            <p>Get a correct answer with mood-based tone and supportive line.</p>
+            <a class="home-card-cta" href="/ask">Open ask page</a>
+          </article>
+
+          <article class="home-action-card">
+            <span class="home-card-icon">02</span>
+            <h3>Study Room</h3>
+            <p>Learn concepts with simple notes, examples, and quick recaps.</p>
+            <a class="home-card-cta" href="/room-chat?assistantMode=rooms&roomName=Study%20Room&mood=confused&language=English&answerLength=Medium&humorMode=false&supportiveLine=true&studyMode=true&focusMode=false">
+              Open study room
+            </a>
+          </article>
+
+          <article class="home-action-card">
+            <span class="home-card-icon">03</span>
+            <h3>FunTalk AI</h3>
+            <p>Start a casual safe chat for jokes, light talk, and boredom relief.</p>
+            <a class="home-card-cta" href="/fun?assistantMode=funtalk&mood=bored&language=Hinglish&answerLength=Medium&humorMode=true&supportiveLine=true&studyMode=false&focusMode=false">
+              Start fun chat
+            </a>
+          </article>
+
+          <article class="home-action-card">
+            <span class="home-card-icon">04</span>
+            <h3>FunGames AI</h3>
+            <p>Play quiz, riddles, emoji games, rapid fire, and safe mini-games.</p>
+            <a class="home-card-cta" href="/games">Play games</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-clean-section" aria-labelledby="homeWhyTitle">
+        <div>
+          <p class="section-label">Why it is different</p>
+          <h2 id="homeWhyTitle">One assistant, multiple moods.</h2>
+        </div>
+
+        <div class="home-clean-list">
+          <article>
+            <strong>Clear answers</strong>
+            <p>Simple language with examples when the user is confused.</p>
+          </article>
+          <article>
+            <strong>Safe tone</strong>
+            <p>Calm, respectful responses without emotional manipulation.</p>
+          </article>
+          <article>
+            <strong>Saved history</strong>
+            <p>Questions and answers can be revisited or deleted later.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-final-cta" aria-labelledby="homeCtaTitle">
+        <div>
+          <p class="section-label">Ready</p>
+          <h2 id="homeCtaTitle">Start with one question.</h2>
+          <p>
+            Choose a mood, ask clearly, and get an answer that is easier to understand.
+          </p>
+        </div>
+        <a class="primary-link" href="/ask">Start asking</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 MoodAnswer AI. Built for clear, safe, mood-aware answers.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/streaks.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

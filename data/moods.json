@@ -1,0 +1,51 @@
+[
+  {
+    "id": "normal",
+    "label": "Normal",
+    "tone": "Clear",
+    "behavior": "Give a clear and natural answer.",
+    "theme": "default-light"
+  },
+  {
+    "id": "confused",
+    "label": "Confused",
+    "tone": "Simple",
+    "behavior": "Explain slowly with simple words, steps, and examples.",
+    "theme": "clean-indigo"
+  },
+  {
+    "id": "stressed",
+    "label": "Stressed",
+    "tone": "Calm",
+    "behavior": "Keep the answer short, calm, and reassuring.",
+    "theme": "calm-blue"
+  },
+  {
+    "id": "sad",
+    "label": "Sad",
+    "tone": "Gentle",
+    "behavior": "Use warm, gentle, supportive wording.",
+    "theme": "soft-purple"
+  },
+  {
+    "id": "angry",
+    "label": "Angry",
+    "tone": "Direct",
+    "behavior": "Stay respectful, direct, calm, and non-argumentative.",
+    "theme": "neutral-gray"
+  },
+  {
+    "id": "curious",
+    "label": "Curious",
+    "tone": "Detailed",
+    "behavior": "Give deeper explanation, context, and useful details.",
+    "theme": "energetic-orange"
+  },
+  {
+    "id": "tired",
+    "label": "Tired",
+    "tone": "Short",
+    "behavior": "Make the answer very brief and easy to read.",
+    "theme": "soft-night"
+  }
+]

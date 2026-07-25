@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title || "Error | MoodAnswer AI" %></title>
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+
+  <body>
+    <main class="login-shell auth-only">
+      <section class="login-panel" aria-label="Error message">
+        <p class="eyebrow">MoodAnswer AI</p>
+        <h1><%= status || 500 %></h1>
+        <p class="login-copy"><%= message || "Something went wrong." %></p>
+        <p class="auth-switch">
+          <a href="/">Back to home</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
