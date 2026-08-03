@@ -23,6 +23,7 @@ function createSessionConfig() {
     resave: false,
     saveUninitialized: false,
     store: createSessionStore(),
+    proxy: env.nodeEnv === "production",
     cookie: {
       httpOnly: true,
       sameSite: "lax",

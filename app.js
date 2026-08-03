@@ -14,6 +14,11 @@ const { attachUser } = require("./middleware/auth");
 const { notFound, errorHandler } = require("./middleware/errorHandler");
 
 const app = express();
+
+if (env.nodeEnv === "production") {
+  app.set("trust proxy", 1);
+}
+
 configurePassport();
 
 app.set("view engine", "ejs");
